@@ -216,7 +216,7 @@
             <div class="inner">
                 <a class="header_logo" href="{{ route('index') }}">
 {{--                    <h4 style="font-weight: bolder; color: white; margin-top: 10px">Whales Corp</h4>--}}
-                    <img src="{{ asset('img/logo.PNG') }}" alt="" />
+                    <img src="{{ asset('img/logo.png') }}" alt="" />
 {{--                    <img height="100" width="100" src="{{ asset('img/logo.PNG') }}" alt="" />--}}
                 </a>
                 <div class="header_menu_container">
