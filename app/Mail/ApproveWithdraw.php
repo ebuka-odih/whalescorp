@@ -31,6 +31,6 @@ class ApproveWithdraw extends Mailable
     {
         return $this->markdown('emails.approve_withdraw')
             ->subject('Whales Corp')
-            ->from('noreply@whalescorp.co');
+            ->from('noreply@whalescorp.io');
     }
 }

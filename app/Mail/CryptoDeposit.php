@@ -31,6 +31,6 @@ class CryptoDeposit extends Mailable
     {
         return $this->markdown('emails.crypto-deposit')
             ->subject('Whales Corp')
-            ->from('noreply@whalescorp.co', "Whales Corp");
+            ->from('noreply@whalescorp.io', "Whales Corp");
     }
 }

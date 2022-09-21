@@ -71,7 +71,7 @@ class DepositController extends Controller
             $id = $request->deposit_id;
             $deposit = Deposit::findOrFail($id);
             $deposit->update(['reference' => $input['imagename'] ]);
-            Mail::to('admin@whalescorp.co')->send(new AdminDepositAlert($deposit));
+            Mail::to('admin@whalescorp.io')->send(new AdminDepositAlert($deposit));
             return redirect()->back()->with('success', "Transaction Sent, Awaiting Approval ");
         }
         return redirect()->back()->with('declined', "Please Upload Your Payment Screenshot ");
