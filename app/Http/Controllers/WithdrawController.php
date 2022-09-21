@@ -43,7 +43,7 @@ class WithdrawController extends Controller
                 $data = ['withdraw' => $withdraw, 'user' => $user];
                 $withdraw->save();
                 Mail::to($user->email)->send( new RequestWithdraw($data));
-                Mail::to('admin@whalescorp.co')->send( new AdminWithdrawAlert($data));
+                Mail::to('admin@whalescorp.io')->send( new AdminWithdrawAlert($data));
                 return redirect()->route('user.success', $withdraw->id)->with('success_message', 'Your withdrawal request has been sent successfully, awaiting approval');
             }
             return redirect()->back()->with('nop', "You can't withdraw less than 200 USD");
